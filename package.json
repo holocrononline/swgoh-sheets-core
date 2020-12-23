@@ -11,6 +11,8 @@
   "license": "MIT",
   "main": "dist/Code.ts",
   "scripts": {
+    "format": "prettier --write src/**.ts src/**.json",
+    "lint": "tslint --project ./tsconfig.json",
     "upload": "clasp push"
   },
   "repository": {
@@ -24,13 +26,15 @@
     "swgoh"
   ],
   "dependencies": {
-    "typescript": "^3.2.2"
+    "@google/clasp": "^2.2.1"
   },
   "devDependencies": {
-    "@types/google-apps-script": "0.0.35",
-    "eslint": "^5.12.0",
-    "prettier": "^1.15.3",
-    "tslint": "^5.12.0",
-    "tslint-config-airbnb": "^5.11.1"
+    "@types/google-apps-script": "^0.0.58",
+    "prettier": "^1.18.2",
+    "tslint": "^5.19.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.6.2"
   }
 }
